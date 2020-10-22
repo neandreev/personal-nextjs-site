@@ -22,6 +22,7 @@ export default function Projects() {
       <div className="flex flex-wrap md:flex-no-wrap justify-between">
         {projects.map((project, index) => {
           const { name, description, properties } = project
+          const githubLink = `https://github.com/neandreev/frontend-project-lvl${index + 1}`
           const imageUrl = `/images/${name}.png`
           const imageAlt = `${name} project representation`
 
@@ -31,6 +32,7 @@ export default function Projects() {
               className="mt-5 mx-1 p-2 w-full md:w-10/12 border rounded shadow-sm"
             >
               <span className="font-bold">{name}</span>
+              <span> ({<a href={githubLink} target="_blank" className="underline">GitHub</a>})</span>
               <img
                 className="rounded my-4"
                 src={imageUrl}
