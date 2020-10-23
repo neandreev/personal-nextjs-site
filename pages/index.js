@@ -11,6 +11,7 @@ export default function IndexPage() {
     <div className="Container">
       <Head>
         <title>Андреев Данила</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <div className="flex justify-center pt-0 md:pt-8 mx-4 min-h-screen">
