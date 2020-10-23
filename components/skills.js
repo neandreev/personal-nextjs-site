@@ -1,7 +1,7 @@
 import List from "../components/list";
 
-const hardskills = ["HTML, CSS", "JavaScript"];
-const softskills = ["Critical thinking", "Lifelong learner"];
+const hardskills = ["HTML, CSS", "JavaScript", "React, Redux", "Jest", "Декларативный код", "Linux power user", ];
+const softskills = ["Critical thinking", "Lifelong learner", "Self-Reflection", "Nonviolent Communication", "Emotional intelligence"];
 
 export default function Skills() {
   return (
