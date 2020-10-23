@@ -26,7 +26,12 @@ export default function About() {
         >
           React Roadmap
         </a>
-        "
+        ". Результаты профориентационного теста от HeadHunder.ru: 
+        <a
+          className="underline pl-1"
+          target="_blank"
+          href="https://hh.ru/file/16939957.pdf"
+        >PDF</a>
       </Paragraph>
     </>
   )
