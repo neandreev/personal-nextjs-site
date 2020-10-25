@@ -3,7 +3,7 @@ module.exports = {
     return [
       {
         source: '/github',
-        destination: 'https://github.com/neandreev/personal-nextjs-site',
+        destination: 'https://github.com/neandreev/',
         permanent: true,
       },
     ]
