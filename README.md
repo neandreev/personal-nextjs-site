@@ -4,3 +4,4 @@
 ```
 npx create-next-app --example "https://github.com/neandreev/personal-nextjs-site"
 ```
+## My link: https://neandreev.ru
