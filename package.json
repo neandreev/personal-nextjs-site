@@ -9,8 +9,7 @@
   "dependencies": {
     "next": "latest",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "typography": "^0.16.19"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "eslint": "^7.11.0",
