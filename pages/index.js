@@ -12,6 +12,7 @@ export default function IndexPage() {
       <Head>
         <title>Андреев Данила</title>
         <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Фронтенд-разработчик, mail@neandreev.ru" />
       </Head>
       <main>
         <div className="flex justify-center pt-0 md:pt-8 mx-4 min-h-screen">
