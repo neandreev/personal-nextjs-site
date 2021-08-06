@@ -1,51 +1,77 @@
-import List from "../components/list"
-import Paragraph from "../components/paragraph"
+import List from './list';
+import Paragraph from './paragraph';
 
 const projects = [
   {
-    name: "Brain-games",
-    description: "Набор из пяти CLI завязанных на математике игр",
-    properties: ["Vanilla JS"],
+    name: 'Brain-games',
+    description: 'Набор из пяти command-line игр, завязанных на математике',
+    properties: ['Vanilla JS'],
   },
   {
-    name: "Gendiff",
+    name: 'Gendiff',
     description:
-      "CLI-Утилита, позволяющая находить и выводить на экран различия между двумя конфигурационными файлами формата json, yml или ini",
-    properties: ["Vanilla JS", "Commander", "Parsers: ini, js-yaml", "Testing: jest"],
+      'CLI-Утилита, позволяющая находить и выводить на экран различия между двумя конфигурационными файлами формата json, yml или ini',
+    properties: ['Vanilla JS', 'Commander', 'Parsers: ini, js-yaml', 'Testing: jest'],
   },
-]
+  {
+    name: 'RSS-Agregator',
+    description:
+      'Агрегатор RSS фидов, производящий парсинг RSS по приведённым вами ссылкам и выводящий в простой форме посты',
+    properties: ['Vanilla JS', 'Webpack', 'Validation: yup', 'Internationalization: i18next'],
+    liveDemonstrationUrl: 'https://rss.neandreev.ru',
+  },
+];
 
 export default function Projects() {
   return (
-    <>
+    <div>
       <span>Проекты:</span>
-      <div className="flex flex-wrap md:flex-no-wrap justify-between">
+      <div className="flex flex-wrap">
         {projects.map((project, index) => {
-          const { name, description, properties } = project
-          const githubLink = `https://github.com/neandreev/frontend-project-lvl${index + 1}`
-          const imageUrl = `/images/${name}.png`
-          const imageAlt = `${name} project representation`
+          const {
+            name, description, properties, liveDemonstrationUrl,
+          } = project;
+          const githubLink = `https://github.com/neandreev/frontend-project-lvl${index + 1}`;
+          const imageUrl = `/images/${name}.png`;
+          const demonstrationUrl = `/images/${name}.gif`;
+          const imageAlt = `${name} project representation`;
 
           return (
             <div
               key={index}
-              className="mt-5 mx-1 p-2 w-full md:w-10/12 border rounded shadow-sm"
+              className="flex-grow mt-2 box-border w-full md:w-1/2"
             >
-              <span className="font-bold">{name}</span>
-              <span> ({<a href={githubLink} target="_blank" className="underline">GitHub</a>})</span>
-              <img
-                className="rounded my-4"
-                src={imageUrl}
-                alt={imageAlt}
-              />
-              <span>О чём:</span>
-              <Paragraph>{description}</Paragraph>
-              <span>При помощи чего:</span>
-              <List points={properties} />
+              <div className="bg-gray-100 box-border m-1 p-3 h-full border rounded shadow-sm">
+                <span className="font-bold">{name}:</span>
+                <span> </span>
+                <span>
+                  <a href={githubLink} target="_blank" className="underline" rel="noreferrer">GitHub</a>
+                </span>
+                <span>, </span>
+                <span>
+                  <a href={demonstrationUrl} target="_blank" className="underline" rel="noreferrer">Gif Demonstration</a>
+                </span>
+                {liveDemonstrationUrl
+                  ? <span>
+                      , <a href={liveDemonstrationUrl} target="_blank" className="underline" rel="noreferrer">Live Demonstration</a>
+                    </span>
+                  : null}
+                <div>
+                  <img
+                    className="border rounded my-4"
+                    src={imageUrl}
+                    alt={imageAlt}
+                  />
+                </div>
+                <span>О чём:</span>
+                <Paragraph>{description}</Paragraph>
+                <span>При помощи чего:</span>
+                <List points={properties} />
+              </div>
             </div>
-          )
+          );
         })}
       </div>
-    </>
-  )
+    </div>
+  );
 }

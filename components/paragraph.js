@@ -3,5 +3,5 @@ export default function Paragraph({ children }) {
     <p className="px-5">
       {children}
     </p>
-  )
+  );
 }

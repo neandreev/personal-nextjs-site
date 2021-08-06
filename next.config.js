@@ -6,6 +6,6 @@ module.exports = {
         destination: 'https://github.com/neandreev/',
         permanent: true,
       },
-    ]
+    ];
   },
-}
+};
