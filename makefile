@@ -1,4 +1,7 @@
 install:
+	npm install
+
+ci:
 	npm ci
 
 develop:
@@ -10,6 +13,9 @@ build:
 #Shortcuts:
 
 i:
+	npm install
+
+c:
 	npm ci
 
 d:
