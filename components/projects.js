@@ -7,12 +7,14 @@ const projects = [
     name: 'Brain-games',
     description: 'Набор из пяти command-line игр, завязанных на математике',
     properties: ['Vanilla JS'],
+    githubUrl: 'https://github.com/neandreev/Brain-games',
   },
   {
     name: 'Gendiff',
     description:
       'CLI-Утилита, позволяющая находить и выводить на экран различия между двумя конфигурационными файлами формата json, yml или ini',
     properties: ['Vanilla JS', 'Commander', 'Parsers: ini, js-yaml', 'Testing: jest'],
+    githubUrl: 'https://github.com/neandreev/Gendiff',
   },
   {
     name: 'RSS-Agregator',
@@ -20,12 +22,12 @@ const projects = [
       'Агрегатор RSS фидов, производящий парсинг RSS по приведённым вами ссылкам и выводящий в простой форме посты',
     properties: ['Vanilla JS', 'Webpack', 'Validation: yup', 'Internationalization: i18next'],
     liveDemonstrationUrl: 'https://rss.neandreev.ru',
+    githubUrl: 'https://github.com/neandreev/RSS-Agregator',
   },
 ];
 
-const renderLinks = (project, index) => {
-  const { name, liveDemonstrationUrl } = project;
-  const githubUrl = `https://github.com/neandreev/frontend-project-lvl${index + 1}`;
+const renderLinks = (project) => {
+  const { name, liveDemonstrationUrl, githubUrl } = project;
   const gifUrl = `/images/${name}.gif`;
 
   const githubLink = <Link href={githubUrl} text='GitHub' />;
