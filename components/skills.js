@@ -4,6 +4,13 @@ const presenthardskills = ['HTML, CSS', 'JavaScript', 'React, Redux', 'Jest', 'Ð
 const futurehardskills = ['SASS', 'TypeScript'];
 const softskills = ['Critical thinking', 'Lifelong learner', 'Self-Reflection', 'Nonviolent Communication', 'Emotional intelligence'];
 
+const renderList = (points, text) => (
+  <div className="w-10/12">
+    <span className="pl-5">{text}</span>
+    <List points={points} />
+  </div>
+);
+
 export default function Skills() {
   return (
     <div>
@@ -12,19 +19,12 @@ export default function Skills() {
         <div className="bg-gray-100 mx-1 p-2 md:w-10/12 border rounded shadow-sm">
           <span className="pl-5">Hardskills:</span>
           <div className="flex justify-between h-full">
-            <div className="w-10/12">
-              <span className="pl-5">In use:</span>
-              <List points={presenthardskills} />
-            </div>
-            <div className="w-10/12">
-              <span className="pl-5">In progress:</span>
-              <List points={futurehardskills} />
-            </div>
+            {renderList(presenthardskills, 'In use:')}
+            {renderList(futurehardskills, 'In progress:')}
           </div>
         </div>
         <div className="bg-gray-100 md:mt-0 mx-1 p-2 md:w-10/12 border rounded shadow-sm">
-          <span className="pl-5 h-full">Softskills:</span>
-          <List points={softskills} />
+          {renderList(softskills, 'Softskills:')}
         </div>
       </div>
     </div>
