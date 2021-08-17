@@ -1,6 +1,8 @@
+import Link from './link';
+
 export default function Header() {
   return (
-    <div className="flex space-x-4 justify-between leading-tight">
+    <div className="flex flex-col items-center md:items-start justify-between leading-tight">
       <div className="flex justify-center">
         <div className="hidden relative h-full md:block w-32">
           <img className="rounded-3xl rounded-r-none" src="/images/photo.jpg" alt="photo"/>
@@ -13,6 +15,9 @@ export default function Header() {
             Фронтенд-разработчик
           </h2>
         </div>
+      </div>
+      <div className="text-xl mt-3 text-center md:text-left">
+         | <Link href="/mail" text="Mail" /> | <Link href="/telegram" text="Telegram" /> | <Link href="/github" text="Github" /> |
       </div>
     </div>
   );
