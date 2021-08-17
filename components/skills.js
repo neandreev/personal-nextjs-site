@@ -11,22 +11,22 @@ const renderList = (points, text) => (
   </div>
 );
 
-export default function Skills() {
-  return (
-    <div>
-      <span>Скиллы:</span>
-      <div className="flex mt-3 space-y-2 md:space-y-0 flex-col md:flex-row justify-between">
-        <div className="bg-gray-100 mx-1 p-2 md:w-10/12 border rounded shadow-sm">
-          <span className="pl-5">Hardskills:</span>
-          <div className="flex justify-between h-full">
-            {renderList(presenthardskills, 'In use:')}
-            {renderList(futurehardskills, 'In progress:')}
-          </div>
-        </div>
-        <div className="bg-gray-100 md:mt-0 mx-1 p-2 md:w-10/12 border rounded shadow-sm">
-          {renderList(softskills, 'Softskills:')}
+const Skills = () => (
+  <div>
+    <span>Скиллы:</span>
+    <div className="flex mt-3 space-y-2 md:space-y-0 flex-col md:flex-row justify-between">
+      <div className="bg-gray-100 mx-1 p-2 md:w-10/12 border rounded shadow-sm">
+        <span className="pl-5">Hardskills:</span>
+        <div className="flex justify-between h-full">
+          {renderList(presenthardskills, 'In use:')}
+          {renderList(futurehardskills, 'In progress:')}
         </div>
       </div>
+      <div className="bg-gray-100 md:mt-0 mx-1 p-2 md:w-10/12 border rounded shadow-sm">
+        {renderList(softskills, 'Softskills:')}
+      </div>
     </div>
-  );
-}
+  </div>
+);
+
+export default Skills;

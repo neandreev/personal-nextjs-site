@@ -65,13 +65,13 @@ const renderProject = (project, index) => {
   );
 };
 
-export default function Projects() {
-  return (
-    <div>
-      <span>Проекты:</span>
-      <div className="flex flex-wrap">
-        {projects.map(renderProject)}
-      </div>
+const Projects = () => (
+  <div>
+    <span>Проекты:</span>
+    <div className="flex flex-wrap">
+      {projects.map(renderProject)}
     </div>
-  );
-}
+  </div>
+);
+
+export default Projects;
