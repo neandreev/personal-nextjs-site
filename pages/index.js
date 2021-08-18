@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import About from '../components/about';
 import Container from '../components/container';
 import Header from '../components/header';
 import Skills from '../components/skills';

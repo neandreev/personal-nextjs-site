@@ -15,7 +15,7 @@ module.exports = {
         source: '/mail',
         destination: 'mailto:mail@neandreev.ru',
         permanent: true,
-      }
+      },
     ];
   },
 };
