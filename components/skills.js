@@ -1,8 +1,8 @@
 import List from './list';
 
-const presenthardskills = ['HTML, CSS', 'JavaScript', 'React, Redux', 'Jest', 'Декларативный код', 'Linux power user'];
-const futurehardskills = ['SASS', 'TypeScript'];
-const softskills = ['Critical thinking', 'Lifelong learner', 'Self-Reflection', 'Nonviolent Communication', 'Emotional intelligence'];
+const presenthardskills = ['JavaScript ES6', 'HTML5 / CSS3', 'React, Redux', 'Linux / WSL', 'Декларативный код'];
+const futurehardskills = ['TypeScript'];
+const softskills = ['Critical Thinking', 'Lifelong Learner', 'Self-Reflection', 'Nonviolent Communication'];
 
 const renderList = (points, text) => (
   <div className="w-10/12">
