@@ -7,6 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "inter-ui": "^3.19.3",
     "next": "^11.0.1",
     "nextjs": "^0.0.3",
     "react": "^17.0.2",

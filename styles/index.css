@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 /* Typography */
+html {
+  font-family: 'Inter', 'system-ui';
+}
