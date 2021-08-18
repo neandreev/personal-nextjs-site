@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import About from '../components/about';
 import Container from '../components/container';
 import Header from '../components/header';
 import Skills from '../components/skills';
@@ -13,9 +14,10 @@ const IndexPage = () => (
     </Head>
     <main>
       <Container>
-        <Header id="header"/>
-        <Skills id="skills"/>
-        <Projects id="projects"/>
+        <Header id="header" />
+        <About id="about" />
+        <Projects id="projects" />
+        <Skills id="skills" />
       </Container>
     </main>
   </div>
