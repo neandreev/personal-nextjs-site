@@ -15,7 +15,6 @@ const IndexPage = () => (
     <main>
       <Container>
         <Header id="header"/>
-        <About id="about"/>
         <Skills id="skills"/>
         <Projects id="projects"/>
       </Container>
