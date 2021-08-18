@@ -16,7 +16,7 @@ const Header = () => (
       </div>
     </div>
     <div className="text-xl mt-3 text-center md:text-left">
-        | <Link href="/mail" text="Mail" /> | <Link href="/telegram" text="Telegram" /> | <Link href="/github" text="Github" /> |
+        | <Link href="/mail" text="Mail" /> | <Link href="/telegram" text="Telegram" /> | <Link href="/github" text="Github" /> | <Link href="resume.pdf" text="PDF Resume" /> |
     </div>
   </div>
 );
