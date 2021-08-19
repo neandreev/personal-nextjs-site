@@ -1,7 +1,7 @@
 import List from './list';
 
 const presenthardskills = ['JavaScript ES6', 'HTML5 / CSS3', 'React, Redux', 'Linux / WSL', 'Декларативный код'];
-const futurehardskills = ['TypeScript'];
+const futurehardskills = ['TypeScript', 'PHP Basics', 'CSS Preprocessors', 'Node.js', 'SQL / Relational Databases'];
 const softskills = ['Critical Thinking', 'Lifelong Learner', 'Self-Reflection', 'Nonviolent Communication'];
 
 const renderList = (points, text) => (
