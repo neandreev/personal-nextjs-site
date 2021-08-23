@@ -1,6 +1,6 @@
 import List from './list';
 
-const presenthardskills = ['JavaScript ES6', 'HTML5 / CSS3', 'React, Redux', 'Linux / WSL', 'Декларативный код', 'PHP Basics'];
+const presenthardskills = ['JavaScript ES6', 'HTML5 / CSS3', 'React, Redux', 'Linux / WSL', 'Декларативный код', 'PHP Basics', 'Docker basics'];
 const futurehardskills = ['TypeScript', 'CSS Preprocessors', 'Node.js', 'SQL / Relational Databases', 'React Hooks'];
 const softskills = ['Critical Thinking', 'Lifelong Learner', 'Self-Reflection', 'Nonviolent Communication'];
 
