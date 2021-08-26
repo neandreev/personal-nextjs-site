@@ -16,6 +16,11 @@ module.exports = {
         destination: 'mailto:mail@neandreev.ru',
         permanent: true,
       },
+      {
+        source: '/resume',
+        destination: '/resume.pdf',
+        permanent: true,
+      }
     ];
   },
 };
