@@ -20,7 +20,7 @@ module.exports = {
         source: '/resume',
         destination: '/resume.pdf',
         permanent: true,
-      }
+      },
     ];
   },
 };
