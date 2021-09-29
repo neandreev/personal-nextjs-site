@@ -1,7 +1,7 @@
+import React from 'react';
 import List from './list';
 import Link from './link';
 import Paragraph from './paragraph';
-import React from 'react';
 
 const projects = [
   {
@@ -35,7 +35,7 @@ const projects = [
     properties: ['NextJS', 'React', 'Styling: Tailwind CSS'],
     liveDemonstrationUrl: 'https://neandreev.ru',
     githubUrl: 'https://github.com/neandreev/personal-nextjs-site',
-  }
+  },
 ];
 
 const renderLinks = (project) => {
@@ -43,7 +43,6 @@ const renderLinks = (project) => {
   const links = [];
 
   const githubLink = <Link href={githubUrl} text='GitHub' />;
-  console.log(githubLink);
   links.push(githubLink);
 
   if (gifUrl) {
@@ -57,8 +56,8 @@ const renderLinks = (project) => {
   }
 
   return <ul>
-    {links.map(link => <li className="inline pr-2">{link}</li>)}
-  </ul>
+    {links.map((link, index) => <li key={index} className="inline pr-2">{link}</li>)}
+  </ul>;
 };
 
 const renderProject = (project, index) => {
