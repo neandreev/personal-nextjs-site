@@ -59,7 +59,7 @@ const renderLinks = (project) => {
   }
 
   if (liveDemonstrationUrl) {
-    const liveDemonstrationLink = <Link href={liveDemonstrationUrl} text="Live demonstration" />;
+    const liveDemonstrationLink = <Link href={liveDemonstrationUrl} text="Live Demonstration" />;
     links.push(liveDemonstrationLink);
   }
 
