@@ -36,6 +36,14 @@ const projects = [
     liveDemonstrationUrl: 'https://neandreev.ru',
     githubUrl: 'https://github.com/neandreev/personal-nextjs-site',
   },
+  {
+    name: 'Slack-chat',
+    description:
+      'Real-time чат с авторизацией/аутентификацией, возможностью добавлять/изменять/удалять каналы',
+    properties: ['React w/Hooks', 'Redux-Toolkit', 'Routes: react-router', 'Styling: react-bootstrap', 'Validation: yup', 'Forms: Formik', 'Internationalization: i18next'],
+    liveDemonstrationUrl: 'https://neandreev-chat.herokuapp.com/',
+    githubLink: 'https://github.com/neandreev/slack-chat',
+  }
 ];
 
 const renderLinks = (project) => {
