@@ -70,7 +70,7 @@ const renderLinks = (project) => {
 
 const renderProject = (project, index) => {
   const { name, description, properties } = project;
-  const imageUrl = `/images/${name}.png`;
+  const imageUrl = `/images/${name}.webp`;
   const imageAlt = `${name} project representation`;
 
   return (
