@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import List from './list';
 import Link from './link';
@@ -80,7 +81,7 @@ const renderProject = (project, index) => {
           <p><span className="font-bold">{name}:</span></p>
           {renderLinks(project, index)}
         </div>
-        <div><img className="border rounded my-2" src={imageUrl} alt={imageAlt} /></div>
+        <div><Image width="1800" height="800" className="border rounded my-2" src={imageUrl} alt={imageAlt} /></div>
         <div>
           <span>О чём:</span>
           <Paragraph>{description}</Paragraph>
