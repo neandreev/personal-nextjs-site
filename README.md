@@ -1,4 +1,5 @@
 # Next.js + Tailwind CSS Personal cv-like site
+# Deprecated, new site [here](https://github.com/neandreev/astro-personal)
 
 ## To use:
 ```
